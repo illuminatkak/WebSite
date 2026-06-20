@@ -1,0 +1,151 @@
+@import url('https://googleapis.com');
+@import url('https://googleapis.com');
+*{
+    margin: 0;
+}
+.antet {
+    height: 70px;
+    background-color: #9C2323;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    
+}
+.antet-logo {
+    display: flex;
+    justify-content: flex-start;
+}
+.antet a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    font-family: 'Kotta One';
+    gap: 8px;
+}
+.antet a:hover {
+    text-decoration: underline;
+}
+.antet input{
+        width: 40%;
+        height: 47px;
+        border-radius: 5px;
+        border: #9C2323 0px;
+    }
+.antet input::placeholder {
+    padding-left: 5px;
+    font-weight: 300;        
+    opacity: 1;
+}
+.body{
+    display: grid;
+    justify-content: center;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1440px;
+    gap: 30px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+h2{
+    color: #9C2323;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'Kotta One';
+}
+p{
+        font-family: 'Kotta One';
+}
+#o{
+    text-align: right;
+}
+#s{
+    display: flex;
+}
+#q{
+    width: 91px;
+}
+#w {
+    width: 200px;
+}
+#dec-up{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    border-bottom: 4px solid #9C2323; 
+    background-image: 
+    linear-gradient(45deg, #38761D 35%, transparent 25%), 
+    linear-gradient(315deg, #38761D 35%, transparent 25%);
+    background-position: bottom left;
+    background-size: 70px 70px; 
+    background-repeat: repeat-x;
+}
+
+.footer {
+    height: 100px;
+    background-color: #9C2323;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: top;
+    padding: 3% 10%;
+}
+
+.footer-contacts h4 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* pagina cu politica de confidentialitate*/
+ .politica-continut {
+            background-color: #ffffff;
+            border: 1px solid #9C2323;
+            border-radius: 12px;
+            padding: 40px;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            color: #333333;
+            line-height: 1.6;
+        }
+        .politica-continut h1 {
+            color: #9C2323;
+            margin-bottom: 20px;
+            font-family: 'Kotta One', serif;
+        }
+        .politica-continut h2 {
+            color: black;
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #9C2323;
+            padding-bottom: 5px;
+        }
+        .politica-continut p {
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+        .politica-continut ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
