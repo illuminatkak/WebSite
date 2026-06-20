@@ -177,13 +177,13 @@ const produseCatalog = [
         descriere: "O cutie misterioasă ce conține un board game secret și accesorii surpriză cu valoare garantată."
     }
 ];
-
+/*Functia care adauga produsele in cos si le stocheaza ca sa nu dispara cand se da refresh la pagina */
 document.body.addEventListener('click', function(e) {
     const button = e.target.closest('#cont');
     if (button && button.querySelector('img').getAttribute('alt') === 'Cart') {
         const idProdus = parseInt(button.dataset.id);
         const produsGasit = produseCatalog.find(p => p.id === idProdus);
-        
+        /* functia care verifica daca sunt produse asemanatoare in cos si le incrimenteaza daca nu sau gasit simplu il adauga */
         if (produsGasit) {
             let cos = JSON.parse(localStorage.getItem('cosCumparaturi')) || [];
             const produsExistent = cos.find(item => item.id === idProdus);
